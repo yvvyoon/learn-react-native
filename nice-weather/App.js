@@ -16,8 +16,8 @@ export default class extends React.Component {
 		// axios 모듈 GET 방식으로 API를 통해 얻은 데이터 fetch
 		const {
 			data: {
-        main: { temp },
-        weather
+				main: { temp },
+				weather,
 			},
 		} = await axios.get(
 			`http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&APPID=${API_KEY}&units=metric`,
